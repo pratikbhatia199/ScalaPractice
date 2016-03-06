@@ -19,3 +19,16 @@ def f3(arr:List[Int]):List[Int] = {
   }
 }
 f(List(1,2,3,4))
+
+List(1,2, 3, 4) match {
+  case Nil => println(Nil)
+  case (x::xs) =>
+    println(x)
+    println(xs)
+    println("Here")
+}
+
+val x = List(1,2, 3, 4)
+for (
+  v <-x
+  ) yield {v * 2}
