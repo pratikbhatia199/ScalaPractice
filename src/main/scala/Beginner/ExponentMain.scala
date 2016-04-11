@@ -16,9 +16,8 @@ object ExponentMain extends App {
 
   def factorial(n: Float): Float = {
     if (n == 0)
-      return 1.toFloat
-    else
-      return (n * factorial(n-1)).toFloat
+      1.toFloat
+    else (n * factorial(n-1)).toFloat
   }
 
   def f(x: Float):Float = {
